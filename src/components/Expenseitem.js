@@ -1,17 +1,16 @@
+import ExpenseDetials from './ExpenseDetials';
+import ExpenseDate from './ExpenseDate';
 import './Expenseitem.css';
 
+
 function ExpenseItem(props)
-{    
-    const expenseDate= new Date(2023,10,18);
-    const expenseTitle='car insurance';
-    const expensePrice=294.34;
-    const LocationOfExpenditure='pune';
-    return (<div className="expense-item">
-        <div>{props.date.toISOString()}</div>
+{   
+     return (<div className="expense-item">
+           <ExpenseDate date={props.date}/>
         <div  className="expense-item__desc">
-            <h2> {props.title}</h2>
-            <h2>{props.location}</h2>
-            <div className="expense-item__price">${props.amount}</div>
+           <ExpenseDetials title={props.title} location={props.location}
+           amount={props.amount}/>
+           
         </div>
 
     </div>)
