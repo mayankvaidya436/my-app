@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ExpenseItem from './components/Expenseitem';
 
-function App(){ 
+const App=()=>{ 
   const expenses=[
     {
       id:'e1',

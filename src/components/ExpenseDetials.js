@@ -1,4 +1,4 @@
-function ExpenseDetials(props)
+const ExpenseDetials=(props)=>
 {
  return( <div  className="expense-item__desc">
     <h2> {props.title}</h2>
