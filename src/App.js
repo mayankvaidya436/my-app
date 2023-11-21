@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import NewExpense from './components/NewExpense/NewExpense';
+
 import ExpenseItem from './components/Expenseitem';
 
 
@@ -41,9 +43,10 @@ const App=()=>{
   ]
   return (
     <div className="App">
+      
       <header className="App-header">
          
-        
+      <NewExpense/>
         <ExpenseItem title={expenses[0].title}
          amount={expenses[0].amount} 
          date={expenses[0].date} 
