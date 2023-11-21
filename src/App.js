@@ -38,15 +38,21 @@ const App=()=>{
       date: new Date(2023,5,6),
       location:'chennai',
 
-    }
-
+    },
   ]
+  const addExpenseHandler=(expense)=>{
+   console.log("i app.js");
+   console.log(expense);
+   
+  }
+
+   
   return (
     <div className="App">
       
       <header className="App-header">
          
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseHandler}/>
         <ExpenseItem title={expenses[0].title}
          amount={expenses[0].amount} 
          date={expenses[0].date} 
