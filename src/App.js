@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ExpenseItem from './components/Expenseitem';
 
+
 const App=()=>{ 
   const expenses=[
     {
@@ -42,9 +43,7 @@ const App=()=>{
     <div className="App">
       <header className="App-header">
          
-        <p>
-          mayank and react demo
-        </p>
+        
         <ExpenseItem title={expenses[0].title}
          amount={expenses[0].amount} 
          date={expenses[0].date} 

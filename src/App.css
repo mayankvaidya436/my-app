@@ -1,4 +1,12 @@
 .App {
+  background-color:whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #40005d;
+  border-radius:20px;
+  
+  
   
 }
 
@@ -14,12 +22,18 @@
 }
 
 .App-header {
-  background-color:white;
+  background-color:burlywood;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: black;
+  border-radius: 20px;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 .App-link {
